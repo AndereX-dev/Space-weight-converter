@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space weigth converter</title>
+    <link rel="stylesheet" href="Space-css.css" />
+    <script src="Space-weigth-con.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="site-logo" aria-label="homepage">SPACE EXPO</a>
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Intro</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Converter</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Planet's in our Solarsystem</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-intro">
+        <h1>Space Weigth Converter</h1>
+      </section>
+
+      <div class="pimg1">
+        <h2>Introduction</h2>
+        <p>
+          On this page we will explore and find out about what the difference
+          between the gravity of our own planet Earth and all the other planets.
+          by finding out how much we would weigth on each planet, Which i think
+          is very exciting and interesting. The planets we are going to use for
+          this is the Sun, Mercury, Venus, Earth, The moon, Mars, Jupiter,
+          Saturn, Uranus, Neptune and Pluto
+        </p>
+      </div>
+
+      <div class="pimg2">
+        <div class="ptext">
+          <span class="border-trans">Planet Converter</span>
+        </div>
+      </div>
+
+      <section class="section section-dark">
+        <h2>Converter</h2>
+        <p>
+          The converter's function is to simulate how heavy a person would be if
+          you were to go to these planets, which can be very useful if we
+          someday figure out how to do space travel. And when and were in time
+          we figure out space travel in a safe way, this converter is just for
+          the fun of it.
+        </p>
+        <input type="number" id="numinput" />
+        <select name="unitdropdown" id="unitdropdown">
+          <option value="Sun">Sun</option>
+          <option value="Mercury">Mercury</option>
+          <option value="Venus">Venus</option>
+          <option value="Earth">Earth</option>
+          <option value="Moon">The Moon</option>
+          <option value="Mars">Mars</option>
+          <option value="Jupiter">Jupiter</option>
+          <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Neptune">Neptune</option>
+          <option value="Pluto">Pluto</option>
+        </select>
+        <button onclick="convertUnit()">Convert</button>
+        <p id="result"></p>
+      </section>
+
+      <section class="section section-dark">
+        <h2>Our planet's</h2>
+        <p>
+          Down below we have a overview of all the known planet's in our
+          solarsystem, and some minor facts about them.
+        </p>
+      </section>
+
+      <div class="container">
+        <div class="grid">
+          <img
+            src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+            alt="The Sun"
+          />
+        </div>
+
+        <div class="card-content">
+          <h2 class="planet-title">SUN</h2>
+          <p class="planet-info">
+            Our Sun is a 4.5 billion-year-old star – a hot glowing ball of
+            hydrogen and helium at the center of our solar system. The Sun is
+            about 93 million miles (150 million kilometers) from Earth, and
+            without its energy, life as we know it could not exist here on our
+            home planet.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="grid2">
+          <img
+            src="https://images.unsplash.com/photo-1614724723656-457e78e0b50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1117&q=80"
+            alt="Mercury"
+          />
+        </div>
+
+        <div class="card-content2">
+          <h2 class="planet-title">MERCURY</h2>
+          <p class="planet-info">
+            The smallest planet in our solar system and nearest to the Sun,
+            Mercury is only slightly larger than Earth's Moon. Despite its
+            proximity to the Sun, Mercury is not the hottest planet in our solar
+            system – that title belongs to nearby Venus, thanks to its dense
+            atmosphere.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="grid3">
+          <img
+            src="https://images.pexels.com/photos/5476413/pexels-photo-5476413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Venus"
+          />
+        </div>
+
+        <div class="card-content3">
+          <h2 class="planet-title">VENUS</h2>
+          <p class="planet-info">
+            Similar in structure and size to Earth, Venus's thick atmosphere
+            traps heat in a runaway greenhouse effect, making it the hottest
+            planet in our solar system. Similar in size and structure to Earth,
+            Venus has been called Earth's twin. These are not identical twins,
+            however – there are radical differences between the two
+            worlds.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="grid4">
+          <img
+            src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Earth"
+          />
+        </div>
+
+        <div class="card-content4">
+          <h2 class="planet-title">EARTH</h2>
+          <p class="planet-info">
+            Earth—our home planet—is the only place we know of so far that’s
+            inhabited by living things. It's also the only planet in our solar
+            system with liquid water on the surface. The name was taken from Old
+            English and Germanic. It simply means "the ground." There are, of
+            course, many names for our planet in the thousands of languages
+            spoken by the people of the third planet from the Sun.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container5">
+        <div class="grid5">
+          <img
+            src="https://images.unsplash.com/photo-1592029383200-73fb26a5b925?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+            alt="The Moon"
+          />
+        </div>
+
+        <div class="card-content5">
+          <h2 class="planet-title">THE MOON</h2>
+          <p class="planet-info">
+            The fifth largest moon in the solar system, Earth's moon is the only
+            place beyond Earth where humans have set foot. It also causes tides,
+            creating a rhythm that has guided humans for thousands of years. The
+            Moon was likely formed after a Mars-sized body collided with
+            Earth.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container6">
+        <div class="grid6">
+          <img
+            src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Mars"
+          />
+        </div>
+
+        <div class="card-content6">
+          <h2 class="planet-title">MARS</h2>
+          <p class="planet-info">
+            Mars is a dusty, cold, desert world with a very thin atmosphere.
+            There is strong evidence Mars was – billions of years ago – wetter
+            and warmer, with a thicker atmosphere. Mars is one of the most
+            explored bodies in our solar system, and it's the only planet where
+            we've sent rovers to roam the alien landscape.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container7">
+        <div class="grid7">
+          <img
+            src="https://images.unsplash.com/photo-1630839437035-dac17da580d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1315&q=80"
+            alt="Jupiter"
+          />
+        </div>
+
+        <div class="card-content7">
+          <h2 class="planet-title">JUPITER</h2>
+          <p class="planet-info">
+            Jupiter is more than twice as massive than the other planets of our
+            solar system combined. The giant planet's Great Red Spot is a
+            centuries-old storm bigger than Earth. Jupiter's familiar stripes
+            and swirls are actually cold, windy clouds of ammonia and water,
+            floating in an atmosphere of hydrogen and helium.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container8">
+        <div class="grid8">
+          <img
+            src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Saturn"
+          />
+        </div>
+
+        <div class="card-content8">
+          <h2 class="planet-title">SATURN</h2>
+          <p class="planet-info">
+            Adorned with a dazzling, complex system of icy rings, Saturn is
+            unique in our solar system. The other giant planets have rings, but
+            none are as spectacular as Saturn's. Like fellow gas giant Jupiter,
+            Saturn is a massive ball made mostly of hydrogen and
+            helium.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container9">
+        <div class="grid9">
+          <img
+            src="https://images.unsplash.com/photo-1614732484003-ef9881555dc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Uranus"
+          />
+        </div>
+
+        <div class="card-content9">
+          <h2 class="planet-title">URANUS</h2>
+          <p class="planet-info">
+            Uranus—seventh planet from the Sun—rotates at a nearly 90-degree
+            angle from the plane of its orbit. This unique tilt makes Uranus
+            appear to spin on its side. Uranus was discovered in 1781 by
+            astronomer William Herschel, although he originally thought it was
+            either a comet or a star.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container10">
+        <div class="grid10">
+          <img
+            src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Neptune"
+          />
+        </div>
+
+        <div class="card-content10">
+          <h2 class="planet-title">NEPTUNE</h2>
+          <p class="planet-info">
+            Neptune—the eighth and most distant major planet orbiting our Sun—is
+            dark, cold and whipped by supersonic winds. It was the first planet
+            located through mathematical calculations. More than 30 times as far
+            from the Sun as Earth, Neptune is the only planet in our solar
+            system not visible to the naked eye and the first predicted by
+            mathematics before its discovery.(nasa.gov)
+          </p>
+        </div>
+      </div>
+
+      <div class="container11">
+        <div class="grid11">
+          <img
+            src="https://images.unsplash.com/photo-1614314107768-6018061b5b72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt="Pluto"
+          />
+        </div>
+
+        <div class="card-content11">
+          <h2 class="planet-title">PLUTO</h2>
+          <p class="planet-info">
+            Pluto is a complex world of ice mountains and frozen plains. Once
+            considered the ninth planet, Pluto is the best known of a new class
+            of worlds called dwarf planets. This fascinating world has blue
+            skies, spinning moons, mountains as high as the Rockies, and it
+            snows – but the snow is red.(nasa.gov)
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
